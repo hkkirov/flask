@@ -2,7 +2,7 @@ pipeline {
     agent any
    }  
     environment {
-        image_name="058302395964.dkr.ecr.eu-central-1.amazonaws.com/flask-final"
+        image_name="90448412758.dkr.ecr.us-east-1.amazonaws.com/flask-final"
     }
     stages {
         stage('Build') {
