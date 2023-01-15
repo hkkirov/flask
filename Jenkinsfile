@@ -29,7 +29,7 @@ pipeline {
         stage('Push') {
             steps {
                sh '''
-                  docker login -u AWS https://058302395964.dkr.ecr.eu-central-1.amazonaws.com -p $(aws ecr get-login-password --region eu-central-1)
+                  docker login -u AWS https://90448412758.dkr.ecr.us-east-1.amazonaws.com -p $(aws ecr get-login-password --region us-east-1)
                   docker push ${image_name}:$GIT_COMMIT
                 '''
             }
