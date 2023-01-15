@@ -1,0 +1,10 @@
+deployment:
+    name: flaskapp
+    image: 290448412758.dkr.ecr.us-east-1.amazonaws.com/flask-final
+    tag: latest
+    replicas: 1
+    port: 5000
+    env: dev
+
+service:
+   port: 30000
